@@ -4,8 +4,9 @@ import BlogList from "@/components/BlogList";
 export default function Home() {
   return (
     <div className="w-[70%] mx-auto">
-      <Blog/>
-      <BlogList/>
+      <Blog />
+      <hr />
+      <BlogList />
     </div>
   );
 }

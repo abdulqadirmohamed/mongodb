@@ -31,7 +31,7 @@ const BlogCards = ({cover, title, postID, tag}) => {
         </div>
       </div>
       {/*  */}
-      <Link href={`blog/${postID}`} className="flex flex-col gap-2 my-2">
+      <Link href={`/blog/${postID}`} className="flex flex-col gap-2 my-2">
         <div className="hidden md:block text-lg font-semibold underline truncate">
           {title}
         </div>
