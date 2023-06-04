@@ -15,3 +15,5 @@ const Header = () => {
 };
 
 export default Header;
+
+//MONGO = mongodb+srv://jiraal-blog:wVjY8aZITPRKtUqd@cluster0.sacrbmp.mongodb.net/test?retryWrites=true&w=majority
