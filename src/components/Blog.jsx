@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import BlogCards from "./BlogCards";
 
 async function getData() {
   const res = await fetch("http://localhost:3000/api/posts",{
@@ -14,12 +16,10 @@ async function getData() {
 }
 const Blog = async () => {
     const data = await getData()
-  return <div>
+  return <div className="grid grid-cols-3 gap-10">
     {data.map((post)=>(
         <div key={post._id} className="my-6">
-            <Link className="font-bold text-2xl my-2" href={`/blog/${post._id}`}>{post.title}</Link>
-            <p className="my-2">{post.desc}</p>
-            <hr />
+          <BlogCards postID={post._id} cover={post.img} title={post.title} tag={post.tag}/>
         </div>
     ))}
   </div>;

@@ -2,18 +2,26 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="relative w-100 my-10 flex flex-col gap-4">
-    <textarea
-      placeholder="What's on your mind"
-      className="w-full focus:outline-none  focus:ring-2 text-sm h-[110px] rounded-md bg-[#161616] px-6 py-5 resize-none overflow-hidden"
-    />
-    <div className="mb-10">
-   h
+    <div className="relative w-[70%] mx-auto mt-6 flex justify-between gap-24 items-center">
+      <div>
+        <img
+          src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage.png"
+          alt=""
+        />
+      </div>
+    
+        <input
+          placeholder="What's on your mind"
+          className="w-full outline-none text-sm rounded border-[1px] border-blue-700 px-6 py-3"
+        />
+      
+ 
+      <div className="">
+        <button className="border-[1px] border-blue-700 px-4 py-2 rounded-full text-sm hover:bg-blue-700 hover:text-white">Signup</button>
+      </div>
     </div>
-  </div>
   );
 };
 
 export default Header;
 
-//MONGO = mongodb+srv://jiraal-blog:wVjY8aZITPRKtUqd@cluster0.sacrbmp.mongodb.net/test?retryWrites=true&w=majority
