@@ -15,9 +15,9 @@ async function getData() {
 const BlogList = async () => {
   const data = await getData();
   return (
-    <div className="grid grid-cols-2 gap-4 mt-5">
+    <div className="grid grid-cols-2 gap-8 mt-5">
       {data.map((post) => (
-        <BlogListCards tag={post.tag} cover={post.img}/>
+        <BlogListCards tag={post.tag} cover={post.img} title={post.title} postID={post._id}/>
       ))}
     </div>
   );

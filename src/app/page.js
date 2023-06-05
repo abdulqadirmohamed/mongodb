@@ -3,7 +3,7 @@ import BlogList from "@/components/BlogList";
 
 export default function Home() {
   return (
-    <div className="w-[70%] mx-auto">
+    <div className="w-[90%] mx-auto">
       <Blog />
       <hr />
       <BlogList />

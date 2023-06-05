@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
     <nav className=" text-blue-700">
-      <div className="w-[80%] mx-auto">
+      <div className="w-[90%] mx-auto">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">

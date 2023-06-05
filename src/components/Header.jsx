@@ -1,14 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="relative w-[70%] mx-auto mt-6 flex justify-between gap-24 items-center">
-      <div>
+    <div className="relative w-[90%] mx-auto mt-6 flex justify-between gap-24 items-center">
+      <Link href="/">
         <img
           src="https://s.yimg.com/rz/p/yahoo_homepage_en-US_s_f_p_bestfit_homepage.png"
           alt=""
         />
-      </div>
+      </Link>
     
         <input
           placeholder="What's on your mind"

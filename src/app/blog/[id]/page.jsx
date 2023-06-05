@@ -22,7 +22,7 @@ const BlogPost = async ({ params }) => {
   return (
     <div>
       <h1 className="font-bold my-2 capitalize">{data.title}</h1>
-      <p>{data.body}</p>
+      <p>{data.desc}</p>
     </div>
   );
 };
